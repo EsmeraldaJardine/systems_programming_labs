@@ -51,3 +51,35 @@ int main(){
     printf("Max double: %e\n", DBL_MAX);
     printf("Max long double: %Le\n", LDBL_MAX);
 };
+
+/* output
+Size of char: 1 bytes
+Size of int: 4 bytes
+Size of short: 2 bytes
+Size of long: 8 bytes
+Size of long long: 8 bytes
+Size of unsigned char: 1 bytes
+Size of unsigned int: 4 bytes
+Size of unsigned short: 2 bytes
+Size of unsigned long: 8 bytes
+Size of unsigned long long: 8 bytes
+Size of float: 4 bytes
+Size of double: 8 bytes
+Size of long double: 16 bytes
+
+Max values:
+Max char: 127
+Max int: 2147483647
+Max short: 32767
+Max long: 9223372036854775807
+Max long long: 9223372036854775807
+Max unsigned char: 255
+Max unsigned int: 4294967295
+Max unsigned short: 65535
+Max unsigned long: 18446744073709551615
+Max unsigned long long: 18446744073709551615
+Max float: 3.402823e+38
+Max double: 1.797693e+308
+Max long double: 1.189731e+4932
+
+*/
