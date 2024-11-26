@@ -1,14 +1,13 @@
-/*
-Write a program that declares a separate variable for each of the following data types: char, int, short,
- long, long long, unsigned char, unsigned int, unsigned short, unsigned long, unsigned long
- long, float, double, and long double. For this you will need to make use of the sizeof() and printf()
- functions.
- ▶Modify your code to print the size of each variable.
- ▶Compile and run your program. Notice the printed values and think about how this affects the overhead of a
- program
-*/
-
 #include <stdio.h>
+#include <limits.h>
+#include <float.h>
+/*
+Write a program that uses printf() to print your first and last names on one line, followed by your favourite
+ past time activity on the following line.
+ Modify the program to also convert your age in years to days and displays both values. You do not need to
+ worry about fractional and leap years. For example, if your age is 20 years, the program should print “20 years =
+ 7300 days
+*/
 int main(){
         char c;
         int i;
@@ -36,4 +35,19 @@ int main(){
     printf("Size of float: %lu bytes\n", sizeof(f));
     printf("Size of double: %lu bytes\n", sizeof(d));
     printf("Size of long double: %lu bytes\n", sizeof(ld));
-}
+//Now look at limits.h and float.h, and notice the value range that each data type affords.
+    printf("\nMax values:\n");
+    printf("Max char: %d\n", CHAR_MAX);
+    printf("Max int: %d\n", INT_MAX);
+    printf("Max short: %d\n", SHRT_MAX);
+    printf("Max long: %ld\n", LONG_MAX);
+    printf("Max long long: %lld\n", LLONG_MAX);
+    printf("Max unsigned char: %u\n", UCHAR_MAX);
+    printf("Max unsigned int: %u\n", UINT_MAX);
+    printf("Max unsigned short: %u\n", USHRT_MAX);
+    printf("Max unsigned long: %lu\n", ULONG_MAX);
+    printf("Max unsigned long long: %llu\n", ULLONG_MAX);
+    printf("Max float: %e\n", FLT_MAX);
+    printf("Max double: %e\n", DBL_MAX);
+    printf("Max long double: %Le\n", LDBL_MAX);
+};
